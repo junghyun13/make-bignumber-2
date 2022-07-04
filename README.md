@@ -15,13 +15,14 @@ numbers=[3,30,34,5,9]
 a=solution(numbers)
 print(a)
 
-# This cod is correct.
+# This code is correct.
 def solution(numbers):
     
     numbers = list(map(str, numbers))
-    numbers.sort(key = lambda x : x*3, reverse = True) # lambda x : x*3은 num 인자 각각의 문자열을 3번 반복한다는 뜻이다. x*3 이유? 1000자리 이하로 3자리수로 맞춘 뒤, 비교하겠다는 뜻.
+    numbers.sort(key = lambda x : x*3, reverse = True)
     return str(int(''.join(numbers)))
 numbers=[3,30,34,5,9]
 a=solution(numbers)
 print(a)
 # result--> "9534330"
+ # lambda x : x*3은 num 인자 각각의 문자열을 3번 반복한다는 뜻이다. x*3 이유? 1000자리 이하로 3자리수로 맞춘 뒤, 비교하겠다는 뜻.
