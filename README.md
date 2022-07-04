@@ -16,12 +16,12 @@ a=solution(numbers)
 print(a)
 
 # This cod is correct.
-def solution(num):
+def solution(numbers):
     
-    num = list(map(str, num))
-    num.sort(key = lambda x : x*3, reverse = True) # lambda x : x*3은 num 인자 각각의 문자열을 3번 반복한다는 뜻이다. 
-# x*3을 하는 이유? -> num의 인수값이 1000 이하이므로 3자리수로 맞춘 뒤, 비교하겠다는 뜻.
-    return str(int(''.join(num)))
+    numbers = list(map(str, numbers))
+    numbers.sort(key = lambda x : x*3, reverse = True) # lambda x : x*3은 num 인자 각각의 문자열을 3번 반복한다는 뜻이다. 
+# x*3 이유? 1000자리 이하로 3자리수로 맞춘 뒤, 비교하겠다는 뜻.
+    return str(int(''.join(numbers)))
 numbers=[3,30,34,5,9]
 a=solution(numbers)
 print(a)
